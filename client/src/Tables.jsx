@@ -1,5 +1,4 @@
 import React from "react";
-console.log('esfcvf');
 const data = [
     {
     id : 0,
@@ -27,7 +26,10 @@ const Jobtable = () => {
         );
       };
       const Jobs = (data) =>{
-        data.map((item) =>{
+        // for(let i = 0;i<data.length;i++){
+        //     console.log(new Date(),data[i].id,data[i].company,data[i].jobid,data[i].career_site);
+        // }
+        return data.map((item) =>{
             console.log(item.id,item.company,item.jobid,item.career_site);
             return <JobtableRow 
                         id = {item.id} 
@@ -40,7 +42,8 @@ const Jobtable = () => {
       
     return (
         <div className="container">
-            <Jobs data = {data}/>
+            <h6>Table</h6>
+            <Jobs data = {data} />
         </div>
     );
 };
