@@ -1,8 +1,18 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    z-index: 0 !important ;
 }
 .App{
     display: flex;
     justify-content: center;
+    width: 100vw;;
+}
+
+.btn{
+    padding: 50px;
+}
+.zi{
+    position: relative;
+    z-index: 100 !important;
 }
